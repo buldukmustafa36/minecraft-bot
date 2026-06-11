@@ -7,9 +7,9 @@ http.createServer((req, res) => res.end('Bot aktif!')).listen(process.env.PORT |
 const bot = mineflayer.createBot({
   host: 'dynamic-6.magmanode.com', 
   port: 25732,
-  username: 'Bot'
+  username: 'Bot',
+  version: '1.21'
 });
-
 bot.on('spawn', () => {
   console.log('Bot sunucuya girdi!');
 });
